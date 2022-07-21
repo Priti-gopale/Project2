@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" type="text/css" href="../static/style.css">
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -49,40 +49,57 @@
     </div>
   </nav>
 
-  <h1 style="color:red">{{msg}}</h1>
   
-  <div class="div">
+  
+  <div style="margin-top: 20px;"class="div">
     <form class="" method="post" enctype="multipart/form-data">
-     
       <div class="container">
       <div class="row">
-        <div class="col">
-          <h3>Upload Defects Data </h3>
-          <input type="file" name="defectscsvfile" value="">
-          
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Upload Defects Data</h5>
+              
+              <input type="file" name="defectscsvfile" value="">
+            </div>
+          </div>
         </div>
-        <div class="col">
-          <h3>Upload AWS Account Security Data</h3>
-          <input type="file" name="securitycsvfile" value="">
-        
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Upload AWS Account Security Data</h5>
+              
+              <input type="file" name="securitycsvfile" value="">
+            </div>
+          </div>
         </div>
       </div>
+      <br>
+      
       <div class="row">
-        <div class="col">
-          <h3>Upload Coverity Issues Data</h3>
-          <input type="file" name="coveritycsvfile" value="">
-        
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Upload Coverity Issues Data</h5>
+              
+              <input type="file" name="coveritycsvfile" value="">
+            </div>
+          </div>
         </div>
-        <div class="col">
-          <h3>Upload Security Level Agreement</h3>
-          <input type="file" name="slacsvfile" value="">
-         
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Upload Security Level Agreement</h5>
+              
+              <input type="file" name="slacsvfile" value="">
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
-    
-    <input type="submit" name="" value="Submit">
+    <div style="text-align: center;margin-top: 20px;">
+    <input type="submit" name=""onclick="alert('Uploaded Successfully!')" value="Submit">
+  </div>
     </form>
   </div>
   
